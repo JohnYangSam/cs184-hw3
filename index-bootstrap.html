@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset=UTF-8" />
+		<!-- Title of the page -->
+		<title>Stoicism - Learning to Live a Good Life - Is Not Dumping Web Elements</title>
+		
+		<!-- Defining the base URL for relative urls in the doc -->
+		<base href="http://ec2-184-72-152-156.compute-1.amazonaws.com/" />
+		
+		<!-- links to bootstrap assets -->
+		<link rel="stylesheet" type=text/css" href="./bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type=text/css" href="./bootstrap/css/bootstrap-responsive.css" />
+		<link type=text/javascript" href="./bootstrap/js/bootstrap.js"></script>
+
+		<!-- additionally defined info -->
+		<meta name="keywords" content="cs184, Stanford, Computer Science, CS, class" />
+
+		<!-- Style example -->
+		<style>
+			body { background-color:#F5F5F5; }
+		</style>
+	
+		<!-- JavaScript example -->	
+		<script type="text/javascript" src="testJavascript.js" ></script>
+		
+	</head>
+
+	<body>
+		<!-- Define main document content -->
+		<main>
+			<!-- Navigation -->
+			<nav>
+				<a href='index.html'>Home</a>
+				<a href='http://johnyangsam.com'>Blog</a>
+				<a href='http://twitter.com/johnyangsam'>Twitter</a>
+			</nav>
+		
+			<!-- Section 1 -->
+			<section id='section1'>
+				<article>
+					<h1>This is article content</h1>
+					<p>It should be able to exist completely independently of the rest of the content on this page</p>
+					<hr/>
+					<p><pre>If there were really long content above the hr tag might be appropriate</pre></p>
+				</article>
+
+			</section>
+
+			<!--Section 2 -->
+			<section id='section2'>
+				<h1>Playing around with headers in a list</h1>
+				<ul>
+					<li><h1>Heading 1</h1></li>
+					<li><h2>Heading 2</h2></li>
+					<li><h3>Heading 3</h3></li>
+					<li><h4>Heading 4</h4></li>
+					<li><h5>Heading 5</h5></li>
+					<li><h6>Heading 6</h6></li>
+					<li><p>paragraph</p></li>
+				</ul>
+			</section>
+
+			<!--Section 3 -->
+			<section id='section3'>
+				<h1>A Definition List</h1>
+				<dl>
+					<dt>Cat</dt>
+					<dd>an animal often used in internet memes</dd>
+					<dt>CS184</dt>
+					<dd>a cool CS class at Stanford</dd>
+					<dt>Node.js</dt>
+					<dd>a hot new JavaScript server side environment</dd>
+					<dt>Express.js</dt>
+					<dd>a web framework for Node</dd>
+				</dl>
+			</section>
+
+			<!--Section 4 -->
+			<section id='section4'>
+				<figcaption>
+					An example legend and title for the example figure and map here.
+				</figcaption>
+				<figure>
+					<img src='FirstFlowChart.png' alt='Example Figure' height='400px' width='800px' usemap ="#flowChart" />
+					<map id ="flowChart"
+					name="flowChart">
+						<area shape ="rect" coords ="90,90,120,120"
+						href ="javascript:alert('A Place');" target="_blank" alt="A Place" />
+						<area shape ="poly" coords ="55,55,120,80,90,80,90,100,70,100,20,80,55,55"
+						href ="http://johnyangsam.com" target="_blank" alt="Blogging" />
+						<area shape ="poly" coords ="145,80,145,100,215,90,215,80,180,60,145,80"
+						href ="http://twitter.com" target="_blank" alt="Twitter.com" />
+					</map>
+
+				</figure>
+			</section>
+			
+			<!--a div -->
+			<h1>Some examples of Text-level semantics</h1>
+			<div>
+				divs are the generic containers <em>emphasized</em> of html. Others would use <strong>strong</strong> text to describe them, but I have no one to cite <cite>(no citation)</cite>.
+				<q>We could have an inline notation here from another speaker</q>
+				<small>Disclaimer: This is all really just filler text to test style</small>
+			</div>
+
+			<div>
+				<p>In a new paragraph, we can talk about <s>no longer relevent information</s> and <dfn>terms</dfn> with latter definitions in ancestors or <abbr>abbr</abbr> (abbreviations).</p>
+
+				<p>This is all being written around <time>10:00pm</time> (a certain time)</p>
+				<p>Enter</p>
+				<kbd><var>homework<sub>subscript</sub><sup>superscript</sup></var></kbd>
+				<code>
+					//A code example
+					function getting_late(<var>homework</var>) {
+						if (<var>homework</var> &gt; 10) {
+							return nosleep();
+						} else if (<var>homework</var> &lt; 10) {
+							return impossible();
+						} else {
+							return error();
+						}
+					}
+				</code>
+				<p>This will output</p>
+				<samp><var>something</var></samp>
+			</div>
+
+			<div>
+				<h1>There are always more variations of tags</h1>
+				<p>
+					<i>Some alterate voice or mood</i>
+					<b>Utilitarian highlighting</b>
+					<u>unarticulate non-textual annonation here</u>
+					<mark>This is a <ins>highlight</ins><del>delete</del></mark>
+					<ruby>Ruby is mainly for East Asian languages</ruby>
+					<rt><rp>Another ruby annotation</rp></rt>
+					<bdi>isolated text</bdi>
+					<bdo>overriding <wbr/>unicode <span>bidirectional</span> algorithm<bdo>
+					<br />
+					break above
+				</p>
+			</div>
+
+			<div>
+				<h1>An iFrame to Stanford</h1>
+				<iframe src='http://stanford.edu'></iframe>
+				<h1>An Example embed from another site</h1>
+				<embed type="video/quicktime" src="http://www.quackit.com/web_design/paris_vegas.mov" style="width:100%;">
+				<h1>An Object Tag Example used in conjunction with param from a different site</h1>
+				<object data="http://htmlquick.com/img/button.swf" type="application/x-shockwave-flash" width="88" height="31">
+						<param movie="http://htmlquick.com/img/button.swf" />
+				</object>
+
+				<h1>An Example of Video from quackit.com</h1>
+				<video src="http://quackit.com/video/pass-countdown.ogg" width="170" height="85" controls></video>
+				<br />
+				<h1>And an audio example from the same place</h2>
+				<audio controls>
+					<source src="http://quackit.com/music/good_enough.wma" type="audio/x-ms-wma">
+					<source src="http://quackit.com/music/good_enough.mp3" type="audio/mpeg">
+					<track src="http://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/tracks/developerStories-subtitles-en.vtt" label="English subtitles" kind="subtitles" srclang="en" default></track>
+				</audio>
+
+				<p>The stuff above is used for a lot of flash stuff</p>	
+
+			<div>
+
+			</div>
+				<h1>An Example SVG from http://upload.wikimedia.org/wikipedia/en/c/ce/SVG-logo.svg</h1>				
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 195 82">
+					<title>SVG logo combined with the W3C logo, set horizontally</title>
+					<desc>The logo combines three entities displayed horizontally: the W3C logo with the text 'W3C'; the drawing of a flower or star shape with eight arms; and the text 'SVG'. These three entities are set horizontally.</desc>
+					
+					<metadata>
+						<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cc="http://creativecommons.org/ns#" xmlns:xhtml="http://www.w3.org/1999/xhtml/vocab#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+							<cc:Work rdf:about="">
+								<dc:title>SVG logo combined with the W3C logo</dc:title>
+								<dc:format>image/svg+xml</dc:format>
+								<rdfs:seeAlso rdf:resource="http://www.w3.org/2007/10/sw-logos.html"/>
+								<dc:date>2007-11-01</dc:date>
+								<xhtml:license rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231"/>
+								<cc:morePermissions rdf:resource="http://www.w3.org/2007/10/sw-logos.html#LogoWithW3C"/>
+								<cc:attributionURL rdf:reource="http://www.w3.org/2001/sw/"/>
+								<dc:description>The logo combines three entities displayed horizontally: the W3C logo with the text 'W3C'; the drawing of a flower or star shape with eight arms; and the text 'SVG'. These three entities are set horizontally.
+							</dc:description>
+							</cc:Work>
+						</rdf:RDF>
+					</metadata>
+					
+					<text x="0" y="75" font-size="83" fill-opacity="0" font-family="Trebuchet" letter-spacing="-12">W3C</text>
+					<text x="180" y="75" font-size="83" fill-opacity="0" font-family="Trebuchet" font-weight="bold">SVG</text>
+					<defs>
+						<g id="SVG" fill="#005A9C">
+							<path id="S" d="M 5.482,31.319 C2.163,28.001 0.109,23.419 0.109,18.358 C0.109,8.232 8.322,0.024 18.443,0.024 C28.569,0.024 36.782,8.232 36.782,18.358 L26.042,18.358 C26.042,14.164 22.638,10.765 18.443,10.765 C14.249,10.765 10.850,14.164 10.850,18.358 C10.850,20.453 11.701,22.351 13.070,23.721 L13.075,23.721 C14.450,25.101 15.595,25.500 18.443,25.952 L18.443,25.952 C23.509,26.479 28.091,28.006 31.409,31.324 L31.409,31.324 C34.728,34.643 36.782,39.225 36.782,44.286 C36.782,54.412 28.569,62.625 18.443,62.625 C8.322,62.625 0.109,54.412 0.109,44.286 L10.850,44.286 C10.850,48.480 14.249,51.884 18.443,51.884 C22.638,51.884 26.042,48.480 26.042,44.286 C26.042,42.191 25.191,40.298 23.821,38.923 L23.816,38.923 C22.441,37.548 20.468,37.074 18.443,36.697 L18.443,36.692 C13.533,35.939 8.800,34.638 5.482,31.319 L5.482,31.319 L5.482,31.319 Z"/>
+							<path id="V" d="M 73.452,0.024 L60.482,62.625 L49.742,62.625 L36.782,0.024 L47.522,0.024 L55.122,36.687 L62.712,0.024 L73.452,0.024 Z"/>
+							<path id="G" d="M 91.792,25.952 L110.126,25.952 L110.126,44.286 L110.131,44.286 C110.131,54.413 101.918,62.626 91.792,62.626 C81.665,62.626 73.458,54.413 73.458,44.286 L73.458,44.286 L73.458,18.359 L73.453,18.359 C73.453,8.233 81.665,0.025 91.792,0.025 C101.913,0.025 110.126,8.233 110.126,18.359 L99.385,18.359 C99.385,14.169 95.981,10.765 91.792,10.765 C87.597,10.765 84.198,14.169 84.198,18.359 L84.198,44.286 L84.198,44.286 C84.198,48.481 87.597,51.880 91.792,51.880 C95.981,51.880 99.380,48.481 99.385,44.291 L99.385,44.286 L99.385,36.698 L91.792,36.698 L91.792,25.952 L91.792,25.952 Z"/>
+						</g>
+					</defs>
+					<g shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality">
+						<g>
+							<g id="logo" transform="scale(0.24) translate(0, 35)">
+								<g stroke-width="38.0086" stroke="#000">
+									<g id="svgstar" transform="translate(150, 150)">
+										<path id="svgbar" fill="#EDA921" d="M-84.1487,-15.8513 a22.4171,22.4171 0 1 0 0,31.7026 h168.2974 a22.4171,22.4171 0 1 0 0,-31.7026 Z"/>
+										<use xlink:href="#svgbar" transform="rotate(45)"/>
+										<use xlink:href="#svgbar" transform="rotate(90)"/>
+										<use xlink:href="#svgbar" transform="rotate(135)"/>
+									</g>
+								</g>
+								<use xlink:href="#svgstar"/>
+							</g>
+							<g id="SVG-label">
+								<use xlink:href="#SVG" transform="scale(1.08) translate(65,10)"/>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div>
+
+			<div>
+				<h1>Canvas Example</h1>
+				<canvas id="canvasx" width="400" height="400" style="border:1px solid #000000;"></canvas>
+				<h2>Math?</h2>
+				<math>a+b+c = z</math>
+				<h1>A Table</h1>
+				<caption>Table Title</caption>
+				<table border="10" cellpadding="5">
+					<tr>
+						<th>Top level 1</th>
+						<th>2</th>		
+						<th>3</th>
+					</tr>
+					<tr>
+						<td>a</td>
+						<td>b</td>		
+						<td>c</td>
+					</tr>
+					<tr>
+						<td>x</td>
+						<td>y</td>		
+						<td>z</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>8</td>		
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>5</td>		
+						<td>4</td>
+					</tr>
+				</table>
+			</div>
+		
+			<h1>Form example</h1>
+			<form>
+				<legend>
+					A legend.
+				</legend>
+				<fieldset>
+					<label for="see">A label</label>
+					<input id='see' />	
+
+					<button>A button!</button>
+				</fieldset>
+				<br/>
+				<select>
+					<option>One option</option>
+					<option>Another option</option>
+				</select>
+				<h2>A text area<h2>
+				<textarea name = 'txtarea' rows='10' cols='75'>Start text</textarea>
+			
+				<h1>Doing pre defined data lists: try typing in 'giraffe'</h1>
+				<input list='animals' />
+				<datalist id='animals'/>
+					<option value='cat'/>
+					<option value='dog'/>
+					<option value='giraffe'/>
+					<option value='monkey'/>
+				</datalist>
+
+				<br />
+
+				<h1>Grouped Selection</h1>
+				<select>
+					<optgroup label='group1'>
+						<option>cat</option>
+						<option>dog</option>
+					</optgroup>
+					<optgroup label='group2'>
+						<option>giraffe</option>
+						<option>monkey</option>
+					</optgroup>
+				</select>
+				<p>Keygen choice if we had a backend</p>
+				<keygen name = 'security'	/>
+				<h1>output example - In a real case this could display the results of a javascript function</h1>
+				<p>See https://developer.mozilla.org/en-US/docs/HTML/Element/output</p>
+				<output name='result'></output>
+				<h1>Progress bar that could be updated with JavaScript</h1>
+				<progress value="70" max="100">70%</progress>
+				<br />
+				<br />
+				<details>get some details and <meter>7</meter>DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS DETAILS details DETAILS <summary>some summary</summary></details>
+			
+				<br />
+				<!-- command is not supported on any major browsers yet! -->	
+				<command type="command" label="alert" icon="code.png" onclick="alert('stuff')">
+				
+				<menu>
+					<button>A button!</button>
+					<button>Another button!</button>
+					<button>All in a menu bar!</button>
+				</menu>
+
+				
+
+			</form>
+
+
+
+		</main>
+	</body>
+	<footer>
+		<p>This has footer information in a paragraph</p>
+		<address>531 Lasuen Mall, Stanford, CA, 94035</address>
+	</footer>
+</html>
